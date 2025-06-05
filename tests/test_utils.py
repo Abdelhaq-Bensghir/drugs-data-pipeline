@@ -43,7 +43,6 @@ def test_valid_atc_codes(valid_code, level_description):
         ("A!", "Special character"),
     ],
 )
-
 def test_invalid_atc_codes(invalid_code, reason):
     """Tests invalid ATC codes."""
     assert (
