@@ -159,7 +159,9 @@ if __name__ == "__main__":
             print("No journal mentions found or data was empty.")
 
         # Second ad-hoc analysis: Find related drugs for a target drug
-        print("\n--- Analysis 2: Related drugs by shared PubMed-only journals ---")
+        print(
+            "\n--- Analysis 2: Find related drugs for BETAMETHASONE, having a shared PubMed-only journals ---"
+        )
 
         # For demonstration, we use a target_drug.
         example_target_drug = "BETAMETHASONE"
