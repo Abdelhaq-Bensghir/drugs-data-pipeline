@@ -150,6 +150,7 @@ You can either :
   - or `python3 -m pytest tests/sql/sales_categorisation_test.py`
 - Or run a specific test function:
   - `python3 -m pytest tests/test_utils.py::test_valid_atc_codes`
+  - `python3 -m pytest tests/sql/sales_categorisation_test.py`
   - `python3 -m pytest tests/sql/sales_categorisation_test.py::test_sales_categorisation_query`
 
 ## Contribution

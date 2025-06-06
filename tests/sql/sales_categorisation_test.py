@@ -107,4 +107,5 @@ def test_sales_categorisation_query(setup_database):
     expected_results_sorted = sorted(expected_results, key=lambda x: x[0])
 
     # Assert that the actual results match the expected results
-    assert actual_results_sorted == expected_results_sorted
+    assert actual_results_sorted == expected_results_sorted, "test result: KO"
+    print("test result: OK")
