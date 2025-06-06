@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 import sys
-import re
+import os
 
 # Import modules from your project structure
 from data_ingestion import reader
@@ -18,6 +18,10 @@ rawdata_file_path = "./data/raw/"
 cleaned_data_file_path = "./data/cleaned/"
 processed_file_path = "./data/output/"
 output_json = processed_file_path + "drug_journal_mentions_graph.json"
+
+# Ensure required directories exist
+os.makedirs(cleaned_data_file_path, exist_ok=True)
+os.makedirs(processed_file_path, exist_ok=True)
 
 
 def main_pipeline():
